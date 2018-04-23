@@ -19,8 +19,7 @@ homeRoutes.get("/home", (req, res, next) => {
 //Profile with Id, query findbyid nots necessary
 homeRoutes.get("/profile", (req, res, next) => {
   res.render(("home/profile"), {user: res.locals.user})
-  .catch(err => res.render("error", err));
-});
+})
 
 
 

@@ -15,7 +15,7 @@ var storage = cloudinaryStorage({
   folder: "IronHack",
   allowedFormats: ["jpg", "png"],
   filename: function(req, file, cb) {
-    photo = new Date().getTime();
+    photo = req.body.username + new Date().getTime()
     cb(undefined, photo);
   }
 });
