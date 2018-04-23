@@ -2,7 +2,6 @@ module.exports = [
   {
     Title: "Star Wars: Episode IV - A New Hope",
     Year: "1977",
-    Rating,
     Runtime: "121 min",
     Genre: "Action, Adventure, Fantasy",
     Director: "George Lucas",
@@ -17,7 +16,6 @@ module.exports = [
   {
     Title: "Pac-Man and the Ghostly Adventures",
     Year: "2013–",
-    Rating,
     Runtime: "30 min",
     Genre: "Animation, Action, Comedy",
     Director: "N/A",
@@ -31,7 +29,6 @@ module.exports = [
   {
     Title: "Mo",
     Year: "1983",
-    Rating: "N/A",
     Runtime: "99 min",
     Genre: "Horror",
     Director: "Chih-Hung Kuei",
