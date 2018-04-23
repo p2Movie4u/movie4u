@@ -90,4 +90,7 @@ app.use('/auth', authRoutes);
 const homeRoutes = require('./routes/home');
 app.use('/',ensureLoggedIn("/auth/login"), homeRoutes);
 
+const listRoutes = require('./routes/list');
+app.use('/list',ensureLoggedIn("/auth/login"), listRoutes);
+
 module.exports = app;
