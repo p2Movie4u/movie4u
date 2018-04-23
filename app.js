@@ -93,4 +93,7 @@ app.use('/',ensureLoggedIn("/auth/login"), homeRoutes);
 const listRoutes = require('./routes/list');
 app.use('/list',ensureLoggedIn("/auth/login"), listRoutes);
 
+const moviesRoutes = require('./routes/movies');
+app.use('/movies',ensureLoggedIn("/auth/login"), moviesRoutes);
+
 module.exports = app;

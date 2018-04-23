@@ -11,6 +11,9 @@ listRoutes.get("/", (req, res, next) => {
   res.render("list/list")
 });
 
+listRoutes.get("/mylist", (req, res, next) => {
+  res.render("list/mylist", {user: res.locals.user})
+});
 
 listRoutes.get("/new", (req, res, next) => {
   res.render("list/new")
