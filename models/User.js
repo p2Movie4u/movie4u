@@ -5,7 +5,7 @@ const userSchema = new Schema({
   username: String,
   password: String,
   email: String,
-  photo: String,
+  photo: {type: String, default: "N/A"},
 }, {
   timestamps: {
     createdAt: 'created_at',
