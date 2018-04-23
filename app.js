@@ -12,6 +12,7 @@ const path = require("path");
 const session = require("express-session");
 const MongoStore = require("connect-mongo")(session);
 const flash = require("connect-flash");
+const ensureLoggedIn = require("./middlewares/ensureLoggedIn")
     
 
 mongoose.Promise = Promise;
@@ -87,6 +88,6 @@ const authRoutes = require('./routes/auth');
 app.use('/auth', authRoutes);
 
 const homeRoutes = require('./routes/home');
-app.use('/', homeRoutes);
+app.use('/',ensureLoggedIn("/auth/login"), homeRoutes);
 
 module.exports = app;
