@@ -110,7 +110,7 @@ listRoutes.get("/to-watch/show/:id/delete", (req, res, next) =>{
 
 listRoutes.get("/to-watch/show/:id/edit", (req, res, next) =>{
   let id = req.params.id
-  List.findByIdAndUpdate(id, {status: watched})
+  List.findByIdAndUpdate(id, {status: "watched"})
   .then (res.redirect("/list/to-watch"))
 })
 
