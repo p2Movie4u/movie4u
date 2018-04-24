@@ -111,4 +111,10 @@ listRoutes.get("/watched-list/show/:id",(req, res, next)=>{
   })
 })
 
+listRoutes.get("/watched-list/show/:id/delete", (req, res, next) =>{
+  let id = req.params.id
+  List.findByIdAndRemove(id)
+  .then (res.redirect("/list/watched-list"))
+})
+
 module.exports = listRoutes;
