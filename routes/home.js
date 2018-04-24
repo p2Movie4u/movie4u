@@ -22,5 +22,4 @@ homeRoutes.get("/profile", (req, res, next) => {
 })
 
 
-
 module.exports = homeRoutes;

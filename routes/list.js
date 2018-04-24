@@ -91,9 +91,9 @@ listRoutes.get("/to-watch", (req, res, next) => {
   })
 });
 
-listRoutes.get("/to-whatch/show/:id",(req, res, next)=>{
+listRoutes.get("/to-watch/show/:id",(req, res, next)=>{
   let id = req.params.id
-  console.log(id)
+  console.log("+++++++++ID+++"+id)
   List.findById(id)
   .populate("movieId")
   .then( data =>{
@@ -107,15 +107,6 @@ listRoutes.get("/to-watch/show/:id/delete", (req, res, next) =>{
   List.findByIdAndRemove(id)
   .then (res.redirect("/list/to-watch"))
 })
-
-let saveNewList = function(movie, status, user){
-  let newList = new List({
-    userId: user._id,
-    movieId: movie._id,
-    status
-  })
-  return newList.save()
-}
 
 listRoutes.get("/watched-list/show/:id",(req, res, next)=>{
   let id = req.params.id
@@ -134,6 +125,15 @@ listRoutes.get("/watched-list/show/:id/delete", (req, res, next) =>{
   .then (res.redirect("/list/watched-list"))
 })
 
+/* Commons functions */
 
+let saveNewList = function(movie, status, user){
+  let newList = new List({
+    userId: user._id,
+    movieId: movie._id,
+    status
+  })
+  return newList.save()
+}
 
 module.exports = listRoutes;
