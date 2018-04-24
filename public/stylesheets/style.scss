@@ -1,6 +1,11 @@
 body {
-  padding: 50px;
+  padding: 0;
+  margin:0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+max-width: 100%;
+}
+img{
+  max-width: 100%;
 }
 
 .nav-item a {
@@ -25,5 +30,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
+  padding:0 16px;
+  
 }
 
+.movi{
+ 
+  width: 49%;
+}

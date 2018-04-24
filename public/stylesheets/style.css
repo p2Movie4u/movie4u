@@ -1,6 +1,11 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  max-width: 100%; }
+
+img {
+  max-width: 100%; }
 
 .nav-item a {
   color: white; }
@@ -23,6 +28,10 @@ body {
 .container-home {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 0 16px; }
+
+.movi {
+  width: 49%; }
 
 /*# sourceMappingURL=style.css.map */
