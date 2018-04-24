@@ -25,11 +25,6 @@ listRoutes.post("/add/:status/:id", (req, res, next) => {
       if(movie != null){
         console.log("Ya existe")
         saveNewList(movie, status, res.locals.user)
-        .then(listSaved =>{
-          console.log("List Created")
-          
-          res.render("list/watched-list", {user: res.locals.user})
-        })
       }else{
         let producersArray = movieData.production_companies.map((elem)=>{
           return {name: elem.name, logo_path: elem.logo_path}
@@ -55,13 +50,37 @@ listRoutes.post("/add/:status/:id", (req, res, next) => {
           saveNewList(movieSaved, status, res.locals.user)
           .then(listSaved =>{
             console.log("List Created") 
-            res.render("list/watched-list", {user: res.locals.user})
+            if(status == "watched"){
+            res.redirect("/list/watched-list")
+            }else{
+            res.redirect("/list/to-watch")
+            }
           })
         })
       }
     })    
   })
 
+});
+
+listRoutes.get("/watched-list", (req, res, next) => {
+
+  List.find({status:"watched"})
+  .populate("movieId")
+  .then(movieWatched =>{
+    console.log(movieWatched)
+    res.render("list/watched-list", {movieWatched})
+  })
+});
+
+listRoutes.get("/to-watch", (req, res, next) => {
+
+  List.find({status:"watchlist"})
+  .populate("movieId")
+  .then(movieWatched =>{
+    console.log(movieWatched)
+    res.render("list/to-watch", {movieWatched})
+  })
 });
 
 let saveNewList = function(movie, status, user){
