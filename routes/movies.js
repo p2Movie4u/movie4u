@@ -3,6 +3,7 @@ const express = require("express");
 const passport = require('passport');
 const moviesRoutes = express.Router();
 const User = require("../models/User");
+const Movie = require("../models/Movie");
 const uploadCloud = require('../config/cloudinary.js');
 const axios = require("axios");
 

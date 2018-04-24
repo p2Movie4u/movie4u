@@ -25,6 +25,14 @@ listRoutes.post("/add/:status/:id", (req, res, next) => {
       if(movie != null){
         console.log("Ya existe")
         saveNewList(movie, status, res.locals.user)
+        .then(listSaved =>{
+          console.log("List Created")
+          if(status == "watched"){
+            res.redirect("/list/watched-list")
+            }else{
+            res.redirect("/list/to-watch")
+            }          
+        })
       }else{
         let producersArray = movieData.production_companies.map((elem)=>{
           return {name: elem.name, logo_path: elem.logo_path}
@@ -92,7 +100,12 @@ let saveNewList = function(movie, status, user){
   return newList.save()
 }
 
-
-
+listRoutes.get("/watched-list/show/:id",(req, res, next)=>{
+  let id = req.params.id
+  console.log(id)
+  List.findByIdAndRemove(id)
+  .populate("movieId")
+  .then(res.redirect("/list/watched-list"))
+})
 
 module.exports = listRoutes;

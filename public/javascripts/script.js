@@ -2,7 +2,10 @@ document.addEventListener(
   "DOMContentLoaded",
   () => {
     let searchInput = document.getElementById("input-title");
+    let searchYear = document.getElementById("input-year");
+    //let searchInput = document.getElementById("input-title");
 
+   
     if (searchInput) {
       searchInput.addEventListener("keyup", event => {
         let searchInputValue = event.target.value;
@@ -39,11 +42,12 @@ let printMovies = function(movies){
     domBody += `
     <div>
     <a href="/movies/show/${e.id}">
-    <h4>${e.title}</h4>
     <img src="https://image.tmdb.org/t/p/w500${e.poster_path}" alt="" width=200 >
     </a>
+    <h5>${e.title}</h5>
     </div>
     `
   })
   containerMovies.innerHTML = domBody;
 }
+

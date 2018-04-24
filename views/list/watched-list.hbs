@@ -1,9 +1,9 @@
 
   <h1>Watched Movies</h1>
-  <h6>Lista de : {{user.username}}</h6>
 
   {{#each movieWatched}}
   <p>{{title}}</p>
   <p>{{movieId.title}}</p>
   <p>{{status}}</p>
+  <a href="/list/watched-list/show/{{_id}}" class="btn btn-danger">Delete</a>
   {{/each}}
