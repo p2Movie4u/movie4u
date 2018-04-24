@@ -1,13 +1,11 @@
-<div class="container-home">
     <h1>Premieres</h1>
+<div class="container-home">
     {{#each data}}
-    <div id="container-movies">
         <div>
             <a href="/movies/show/{{id}}">
                 <img src="https://image.tmdb.org/t/p/w500{{poster_path}}" alt="" width=200>
             </a>
             <h4>{{title}}</h4>
         </div>
-    </div>
     {{/each}}
 </div>

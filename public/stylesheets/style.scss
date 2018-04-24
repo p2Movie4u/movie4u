@@ -3,7 +3,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
+.nav-item a {
   color: white;
 }
 .p-4 li{
@@ -18,6 +18,12 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-#container-movies div{
-  width: 30%;
+.fas{
+  color: white;
 }
+.container-home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
