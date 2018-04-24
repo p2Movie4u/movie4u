@@ -91,6 +91,23 @@ listRoutes.get("/to-watch", (req, res, next) => {
   })
 });
 
+listRoutes.get("/to-whatch/show/:id",(req, res, next)=>{
+  let id = req.params.id
+  console.log(id)
+  List.findById(id)
+  .populate("movieId")
+  .then( data =>{
+    console.log(data)
+    res.render("list/to-watch-details", {data})
+  })
+})
+
+listRoutes.get("/to-watch/show/:id/delete", (req, res, next) =>{
+  let id = req.params.id
+  List.findByIdAndRemove(id)
+  .then (res.redirect("/list/to-watch"))
+})
+
 let saveNewList = function(movie, status, user){
   let newList = new List({
     userId: user._id,
@@ -116,5 +133,7 @@ listRoutes.get("/watched-list/show/:id/delete", (req, res, next) =>{
   List.findByIdAndRemove(id)
   .then (res.redirect("/list/watched-list"))
 })
+
+
 
 module.exports = listRoutes;

@@ -1,10 +1,8 @@
+<h1>Movies To Watch</h1>
 
-  <h1>Movies To Watch</h1>
-  <h6>Lista de : {{user.username}}</h6>
-  <p>Películas por ver</p>
-
-    {{#each movieWatched}}
-  <p>{{title}}</p>
-  <p>{{movieId.title}}</p>
-  <p>{{status}}</p>
-  {{/each}}
+{{#each movieWatched}}
+<p>{{title}}</p>
+<p>{{movieId.title}}</p>
+<p>{{status}}</p>
+<a href="/list/to-watch/show/{{id}}" class="btn btn-danger">Show details</a>
+{{/each}}
