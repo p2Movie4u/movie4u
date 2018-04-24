@@ -1,0 +1,6 @@
+<h1>Random</h1>
+{{#with randomMovie}}
+<h5>Title: {{movieId.title}}</h5>
+<img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="{{movieId.title}}-poster-img">
+<p>{{movieId.overview}}</p>
+{{/with}}
