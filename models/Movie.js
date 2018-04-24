@@ -2,17 +2,21 @@ const mongoose = require('mongoose');
 const Schema   = mongoose.Schema;
 
 const movieSchema = new Schema({
-  Title: String,
-  Year: String,
-  Rating: {type: String ,default: null },
-  Runtime: String,
-  Genre: String,
-  Director: String,
-  Writer: String,
-  Actors: String,
-  Plot: String,
-  Country: String,
-  Poster: String
+  api_id: Number,
+  title: String,
+  year: Date,
+  popularity: Number,
+  runtime: String,
+  genres: Array,
+  producers: [{
+    name: String,
+    logo_path: String
+  }],
+  overview: String,
+  language: String,
+  poster: String,
+  revenue: Number,
+  budget: Number
 }, {
   timestamps: {
     createdAt: 'created_at',

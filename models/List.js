@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 const Schema   = mongoose.Schema;
 
 const listSchema = new Schema({
-  name: String,
-  genre: String,
-  movies: Array
+  userId: { type: Schema.Types.ObjectId, ref: 'User' },
+  movieId: { type: Schema.Types.ObjectId, ref: 'Movie'},
+  status: {type: String, default:"watchlist", enum:["watchlist", "watched"]}
 }, {
   timestamps: {
     createdAt: 'created_at',
@@ -12,5 +12,5 @@ const listSchema = new Schema({
   }
 });
 
-const List = mongoose.model('List', movieSchema);
+const List = mongoose.model('List', listSchema);
 module.exports = List;

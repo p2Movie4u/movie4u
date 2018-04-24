@@ -13,4 +13,8 @@ a {
 .nav-link {
   font-size: 1.5em;
 }
-
+#container-movies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

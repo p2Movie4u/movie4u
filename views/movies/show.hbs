@@ -1,0 +1,11 @@
+{{#with data}}
+<h3>{{original_title}}</h3>
+<img src="https://image.tmdb.org/t/p/w500{{poster_path}}" alt="" width=200>
+<p>{{overview}}</p>
+<form action="/list/add/watched/{{id}}" method="POST">
+<button type="submit" class="btn btn-info">Add to Watched Movies</button>
+</form>
+<form action="/list/add/watchlist/{{id}}" method="POST">
+  <button type="submit" class="btn btn-info">Add to Watchlist</button>
+</form>
+{{/with}}
