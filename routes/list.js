@@ -103,9 +103,12 @@ let saveNewList = function(movie, status, user){
 listRoutes.get("/watched-list/show/:id",(req, res, next)=>{
   let id = req.params.id
   console.log(id)
-  List.findByIdAndRemove(id)
+  List.findById(id)
   .populate("movieId")
-  .then(res.redirect("/list/watched-list"))
+  .then( data =>{
+    console.log(data)
+    res.render("list/watched-details", {data})
+  })
 })
 
 module.exports = listRoutes;
