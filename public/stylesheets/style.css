@@ -34,8 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 450px; }
+  align-items: center; }
   .bot-home .btn {
     border-color: #f5888a;
     padding: 40px 188px;
@@ -179,5 +178,11 @@ a.btn-outline-corp:hover {
 .fa-camera {
   font-size: 5rem;
   vertical-align: middle; }
+
+.titulo-index {
+  font-size: 10rem;
+  color: white;
+  text-align: center;
+  margin-top: 35%; }
 
 /*# sourceMappingURL=style.css.map */
