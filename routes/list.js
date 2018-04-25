@@ -8,6 +8,8 @@ const List = require("../models/List");
 const axios = require("axios");
 const commons = require("../config/commons")
 
+console.log("++++++++++++++++"+commons);
+
 listRoutes.get("/", (req, res, next) => {
   res.render("list/list")
 });
@@ -93,7 +95,6 @@ listRoutes.get("/to-watch", (req, res, next) => {
 
 listRoutes.get("/to-watch/show/:id",(req, res, next)=>{
   let id = req.params.id
-  console.log("+++++++++ID+++"+id)
   List.findById(id)
   .populate("movieId")
   .then( data =>{

@@ -2,9 +2,6 @@ document.addEventListener(
   "DOMContentLoaded",
   () => {
     let searchInput = document.getElementById("input-title");
-    let searchYear = document.getElementById("input-year");
-    //let searchInput = document.getElementById("input-title");
-
    
     if (searchInput) {
       searchInput.addEventListener("keyup", event => {
