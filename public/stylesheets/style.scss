@@ -1,6 +1,7 @@
 /*GOOGLE FONTS*/
 @import url("https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text");
 @import url("https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Slabo+27px");
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
 /* COLORS */
 
 $micolor1: #4a5562;
@@ -14,7 +15,7 @@ body {
   background-color: $micolor1;
   padding: 0;
   margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px $textcontenct;
   max-width: 100%;
   height: 100%;
 }
@@ -30,7 +31,7 @@ body {
     font-size: 5.5rem;
     margin-top: 2%;
   }
-  .fas {
+  .fa-home {
     color: $colortextnav;
     font-size: 4rem;
   }
@@ -48,21 +49,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 300px;
+  margin-top: 450px;
 
   .btn {
-    /* background-color: $colorred; */
     border-color: $colorborder;
-    border-width: 2px;
     padding: 40px 188px;
     font-size: 5rem;
     margin-top: 100px;
     color: $colortextnav;
-    
   }
 }
-
-
+.btn-outline-ind {
+  background-color: $colorred;
+}
 
 img {
   max-width: 100%;
@@ -85,7 +84,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 16px;
-  
+
   h4 {
     color: $colortextnav;
     font-family: $textcontenct;
@@ -105,18 +104,75 @@ img {
 .movi {
   width: 49%;
   margin-bottom: 7px;
-  img{
-    width: 100;
+  img {
+    width: 100%;
     height: 700px;
   }
-  
 }
 .list {
-  .btn{
+  h1 {
+    color: $colortextnav;
+    font-family: $textcontenct;
+    font-size: 8em;
+    margin-top: 18%;
+    text-align: center;
+  }
+  .btn {
     font-size: 3rem;
+    border-width: 2px;
+  }
+  .bot-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 91px;
   }
 }
 
-a.btn-outline-corp:hover{
-    background-color: $colorred ;
+a.btn-outline-corp:hover {
+  background-color: $colorred;
 }
+#form-container {
+  text-align: left;
+  font-family: $textcontenct;
+  color: $colortextnav;
+  font-size: 3.35em;
+margin-left: 25px;
+}
+.sign {
+  h2 {
+    font-size: 10em;
+    font-family: $textcontenct;
+  color: $colortextnav;
+  text-align: center;
+  margin: 11% auto 18% auto;
+  }
+}
+.form-control{
+  width: 90%;
+  font-size: 1.5em;
+  border: 3px solid $colorborder;
+  margin: 35px auto;
+
+  background-color: $micolor1; 
+}
+.form-control::placeholder{ 
+  font-family:'Roboto', sans-serif;
+  color: #C8CACC;
+  font-weight: 100;
+  
+}
+.photo{
+  margin-top: 83px;
+  .archivo{
+    display: block;
+
+  }
+}
+.sign-bot{
+  font-size: 3rem;
+    border-width: 2px;
+
+}
+
