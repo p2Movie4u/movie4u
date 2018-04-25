@@ -1,3 +1,4 @@
+require("dotenv").config();
 const List = require("../models/List");
 
 module.exports = {
@@ -16,6 +17,10 @@ module.exports = {
 
   imgProfile: (file) => {
     return file == undefined ? "http://freelanceme.net/Images/default%20profile%20picture.png" : file.url
+  },
+
+  apiCall: (id) =>{
+    return axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.APIPELI}`)
   }
 }
 
