@@ -3,52 +3,59 @@
 
 <head>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+    crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js" integrity="sha384-lZmvU/TzxoIQIOD9yQDEpvxp6wEU32Fy0ckUgOH4EIlMOCdR823rg4+3gWRwnX1M" crossorigin="anonymous"></script>
- 
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js" integrity="sha384-lZmvU/TzxoIQIOD9yQDEpvxp6wEU32Fy0ckUgOH4EIlMOCdR823rg4+3gWRwnX1M"
+    crossorigin="anonymous"></script>
+    
+
   <title>Movie4u</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 
-<body>
-<div class="pos-f-t">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <ul>
-        <li class="nav-item active">
-          <a class="nav-link" href="/home">Premieres</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/movies">Movies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/list">List</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/random">Random</a>
-        <li class="nav-item active">
-          <a class="nav-link" href="/profile">Profile</a>
-        </li>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/auth/logout">Log Out</a>
-        </li>
-      </ul>
+<body class="dark-bg">
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <ul>
+          <li class="nav-item active">
+            <a class="nav-link" href="/home">Premieres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/movies">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/list">List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/random">Random</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/profile">Profile</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/auth/logout">Log Out</a>
+          </li>
+        </ul>
+      </div>
     </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="nav-link" href="/home">
+        <span class="fas fa-home"></span>
+      </a>
+      <h1>Movie4u</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
   </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <a class="nav-link" href="/home"><span class="fas fa-home"></span></a>
-    <h1>Movie4u</h1>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-
   {{{body}}}
 
   <script src='/javascripts/script.js'></script>

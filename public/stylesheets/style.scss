@@ -1,41 +1,118 @@
+/*GOOGLE FONTS*/
+@import url("https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text");
+@import url("https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Slabo+27px");
+/* COLORS */
+
+$micolor1: #4a5562;
+$colortextnav: #ffffff;
+$textapp: "Libre Barcode 128 Text", cursive;
+$colorred: rgba(245, 136, 138, 0.7);
+$colorborder: #f5888a;
+$textcontenct: "Slabo 27px", serif;
+
 body {
+  background-color: $micolor1;
   padding: 0;
-  margin:0;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-max-width: 100%;
+  max-width: 100%;
+  height: 100%;
 }
-img{
+.pos-f-t {
+  width: 100%;
+  .bg-dark {
+    background-color: $colorred !important;
+  }
+  h1 {
+    font-family: $textapp;
+    color: $colortextnav;
+    font-size: 5.5rem;
+    margin-top: 2%;
+  }
+  .fas {
+    color: $colortextnav;
+    font-size: 4rem;
+  }
+  a {
+    color: $colortextnav;
+    font-family: $textcontenct;
+    font-size: 3em;
+  }
+  .navbar-toggler-icon {
+    font-size: 3em;
+  }
+}
+.bot-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+
+  .btn {
+    background-color: $colorred;
+    border-color: $colorborder;
+    padding: 40px 188px;
+    font-size: 5rem;
+    margin-top: 100px;
+    color: $colortextnav;
+  }
+  a:link {
+    color: red !important;
+  }
+}
+
+img {
   max-width: 100%;
 }
 
-.nav-item a {
-  color: white;
-}
-.p-4 li{
+.p-4 li {
   text-align: right;
   list-style: none;
 }
 .nav-link {
   font-size: 1.5em;
 }
-#container-movies{
+#container-movies {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.fas{
-  color: white;
-}
-.container-home{
+.container-home {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
-  padding:0 16px;
-  
+  padding: 0 16px;
+
+  h4 {
+    color: $colortextnav;
+    font-family: $textcontenct;
+    font-size: 3em;
+  }
+}
+.premier-list {
+  h1 {
+    font-size: 7em;
+  }
+  color: $colortextnav;
+  font-family: $textcontenct;
+  margin: 2% 0 2% 4%;
+  text-align: center;
 }
 
-.movi{
- 
+.movi {
   width: 49%;
+  margin-bottom: 7px;
+  img{
+    width: 100;
+    height: 700px;
+  }
+  
+}
+.list {
+  .btn{
+    font-size: 3rem;
+    :active: red
+    
+  }
 }
