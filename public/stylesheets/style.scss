@@ -18,6 +18,7 @@ body {
   max-width: 100%;
   height: 100%;
 }
+
 .pos-f-t {
   width: 100%;
   .bg-dark {
@@ -50,17 +51,18 @@ body {
   margin-top: 300px;
 
   .btn {
-    background-color: $colorred;
+    /* background-color: $colorred; */
     border-color: $colorborder;
+    border-width: 2px;
     padding: 40px 188px;
     font-size: 5rem;
     margin-top: 100px;
     color: $colortextnav;
-  }
-  a:link {
-    color: red !important;
+    
   }
 }
+
+
 
 img {
   max-width: 100%;
@@ -83,7 +85,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 16px;
-
+  
   h4 {
     color: $colortextnav;
     font-family: $textcontenct;
@@ -112,7 +114,9 @@ img {
 .list {
   .btn{
     font-size: 3rem;
-    :active: red
-    
   }
+}
+
+a.btn-outline-corp:hover{
+    background-color: $colorred ;
 }

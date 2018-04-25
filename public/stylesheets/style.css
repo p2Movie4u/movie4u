@@ -36,14 +36,13 @@ body {
   align-items: center;
   margin-top: 300px; }
   .bot-home .btn {
-    background-color: rgba(245, 136, 138, 0.7);
+    /* background-color: $colorred; */
     border-color: #f5888a;
+    border-width: 2px;
     padding: 40px 188px;
     font-size: 5rem;
     margin-top: 100px;
     color: #ffffff; }
-  .bot-home a:link {
-    color: red !important; }
 
 img {
   max-width: 100%; }
@@ -87,5 +86,8 @@ img {
 
 .list .btn {
   font-size: 3rem; }
+
+a.btn-outline-corp:hover {
+  background-color: rgba(245, 136, 138, 0.7); }
 
 /*# sourceMappingURL=style.css.map */
