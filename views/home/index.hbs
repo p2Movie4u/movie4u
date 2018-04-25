@@ -5,9 +5,12 @@
     {{#each data}}
         <div class = "movi">
             <a href="/movies/show/{{id}}">
+            {{#if poster_path}}
                 <img src="https://image.tmdb.org/t/p/w500{{poster_path}}" alt="" >
+            {{else}}
+                <img src="images/default-movie.png" alt="" >
+            {{/if}}    
             </a>
-            
         </div>
     {{/each}}
 </div>
