@@ -1,4 +1,10 @@
+/* COLORS */
+
+$micolor1:#234885;
+
+
 body {
+  columns: $micolor1;
   padding: 0;
   margin:0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -7,7 +13,7 @@ max-width: 100%;
 img{
   max-width: 100%;
 }
-
+#fondo
 .nav-item a {
   color: white;
 }
@@ -36,6 +42,11 @@ img{
 }
 
 .movi{
- 
   width: 49%;
+  margin-bottom: 10px;
+  h3 {
+    padding: 10px 2px 20px 5px;
+    font-size: 2.5em;
+  }
+  
 }
