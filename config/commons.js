@@ -9,7 +9,13 @@ module.exports = {
     })
     return newList.save()
   },
+
   random: (x) => {
     return Math.floor(Math.random()*x)
+  },
+
+  imgProfile: (file) => {
+    return file == undefined ? "http://freelanceme.net/Images/default%20profile%20picture.png" : file.url
   }
 }
+

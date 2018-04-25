@@ -1,11 +1,13 @@
+    <div class = "premier-list">
     <h1>Premieres</h1>
+    </div>
 <div class="container-home">
     {{#each data}}
         <div class = "movi">
             <a href="/movies/show/{{id}}">
                 <img src="https://image.tmdb.org/t/p/w500{{poster_path}}" alt="" >
             </a>
-            <h4>{{title}}</h4>
+            
         </div>
     {{/each}}
 </div>
