@@ -18,7 +18,7 @@ listRoutes.post("/add/:status/:id", (req, res, next) => {
   let id = req.params.id;
   let status = req.params.status;
 
-  axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.APIPELI}`)
+  commons.apiCall(id)
   .then(elem =>{
     let movieData = elem.data;
 
