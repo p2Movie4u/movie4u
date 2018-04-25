@@ -8,7 +8,6 @@ const List = require("../models/List");
 const axios = require("axios");
 const commons = require("../config/commons")
 
-console.log("++++++++++++++++"+commons);
 
 listRoutes.get("/", (req, res, next) => {
   res.render("list/list")
