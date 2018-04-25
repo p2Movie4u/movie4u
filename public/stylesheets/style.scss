@@ -19,6 +19,7 @@ body {
   height: 100%;
 }
 .pos-f-t {
+  width: 100%;
   .bg-dark {
     background-color: $colorred !important;
   }
@@ -107,4 +108,11 @@ img {
     height: 700px;
   }
   
+}
+.list {
+  .btn{
+    font-size: 3rem;
+    :active: red
+    
+  }
 }
