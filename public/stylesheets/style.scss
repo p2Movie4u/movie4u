@@ -1,9 +1,14 @@
 body {
-  padding: 50px;
+  padding: 0;
+  margin:0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+max-width: 100%;
+}
+img{
+  max-width: 100%;
 }
 
-a {
+.nav-item a {
   color: white;
 }
 .p-4 li{
@@ -17,4 +22,20 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.fas{
+  color: white;
+}
+.container-home{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  padding:0 16px;
+  
+}
+
+.movi{
+ 
+  width: 49%;
 }
