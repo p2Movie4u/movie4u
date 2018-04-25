@@ -168,7 +168,7 @@ a.btn-outline-corp:hover{
 a.btn-outline-corp:hover {
   background-color: $colorred;
 }
-#form-container {
+.sign-container {
   text-align: left;
   font-family: $textcontenct;
   color: $colortextnav;
@@ -184,7 +184,7 @@ margin-left: 25px;
   margin: 11% auto 18% auto;
   }
 }
-.form-control{
+.intp-sign{
   width: 90%;
   font-size: 1.5em;
   border: 3px solid $colorborder;
@@ -192,7 +192,7 @@ margin-left: 25px;
 
   background-color: $micolor1; 
 }
-.form-control::placeholder{ 
+.intp-sign::placeholder{ 
   font-family:'Roboto', sans-serif;
   color: #C8CACC;
   font-weight: 100;
@@ -200,14 +200,21 @@ margin-left: 25px;
 }
 .photo{
   margin-top: 83px;
-  .archivo{
-    display: block;
-
+  text-align: center;
+  .btn{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7em;
   }
 }
 .sign-bot{
-  font-size: 3rem;
+  font-size: 4rem;
   border-width: 2px;
+  padding: 15px;
+  margin: 10px auto 5px auto;
 
+}
+.fa-camera{
+  font-size: 5rem;
+  vertical-align: middle;
 }
 

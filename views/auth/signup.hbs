@@ -2,25 +2,23 @@
 <div class="sign">
   <h2>Signup</h2>
 </div>
-<form action="/auth/signup" method="POST" id="form-container" enctype="multipart/form-data">
+<form action="/auth/signup" method="POST" id="form-container" class="sign-container" enctype="multipart/form-data">
   <div class="form-group">
     
-    <input id="username" type="text" class="form-control" name="username" placeholder="Your username">
+    <input id="username" type="text" class="form-control intp-sign" name="username" placeholder="Your username">
   </div>
 
   <div class="form-group">
    
-    <input id="password" type="password" class="form-control" name="password" placeholder="Your password">
+    <input id="password" type="password" class="form-control intp-sign" name="password" placeholder="Your password">
   </div>
   <div class="form-group">
     
-    <input id="email" type="email" class="form-control" name="email" placeholder="Your email">
+    <input id="email" type="email" class="form-control intp-sign" name="email" placeholder="Your email">
   </div>
   <div class="form-group photo">
-    <label for="photo">Upload you profile photo</label>
-    <br>
-    <input id="photo" type="file" class="btn btn-light" name="photo"></span>
-
+    <label for="photo"><i class="fas fa-camera"></i></label>
+    <input id="photo" type="file" class="btn btn-light" name="photo">
   </div>
   {{#if message }}
   <div class="error-message">{{ message }}</div>
