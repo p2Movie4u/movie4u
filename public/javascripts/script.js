@@ -35,13 +35,18 @@ let printMovies = function(movies){
   containerMovies.innerHTML = "";
   let domBody = "";
     movies.forEach((e) =>{
-      console.log(e)
+      console.log("++++++++++++"+e.poster_path)
+      if(e.poster_path){
+        src =  `https://image.tmdb.org/t/p/w500${e.poster_path}`
+      }else{
+        src = "/images/default-movie.png"
+      }
+      console.log("********"+src)
     domBody += `
-    <div>
+    <div class="movie-item">
     <a href="/movies/show/${e.id}">
-    <img src="https://image.tmdb.org/t/p/w500${e.poster_path}" alt="" width=200 >
+    <img src="${src}" alt="" >
     </a>
-    <h5>${e.title}</h5>
     </div>
     `
   })

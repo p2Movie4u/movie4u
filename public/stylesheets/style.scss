@@ -79,6 +79,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
 }
 .container-home {
   display: flex;
@@ -119,4 +121,32 @@ img {
 
 a.btn-outline-corp:hover{
     background-color: $colorred ;
+}
+
+.movie-item{
+  width: 50%;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+
+.search-bar{
+    height: 100px;
+    margin-top: 2%;
+    width: 95%;
+    margin: 20px auto;
+  }
+
+#input-title{
+    font-size: 2.5rem;
+}
+
+.lupa{
+  font-size: 45px;
+}
+.lupa-nav{
+  font-size: 12px;
 }

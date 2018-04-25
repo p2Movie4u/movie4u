@@ -1,13 +1,11 @@
-<h1>Search Movies</h1>
 
-<label for="title">By Title</label>
-<input type="text" name="title" id="input-title" placeholder="Title" required>
-<br>
-{{!-- <label for="year">By Year</label>
-<input type="text" name="year" id="input-year" placeholder="Year">
-<br>
-<label for="genre">By Genre</label>
-<input type="text" name="genre" id="input-genre" placeholder="Genre"> --}}
+<div class="search-bar input-group input-group-lg">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-lg"><i class="fas fa-search lupa"></i></span>
+  </div>
+  <input type="text" name="title" id="input-title" placeholder="Title" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+</div>
+
 
 <div id="container-movies">
 
