@@ -1,25 +1,26 @@
 
-<h2>Login</h2>
+<div class="log">
+  <h2>Login</h2>
+</div>
 
-<form action="/auth/login" method="POST" id="form-container">
-  <label for="username">Username</label>
-  <input id="username" type="text" name="username" placeholder="Your username">
-
-  <br><br>
-
-  <label for="password">Password</label>
-  <input id="password" type="password" name="password" placeholder="Your password">
-  <br>
-  {{#if message }}
+<div class="bot-login">
+  <form action="/auth/login" method="POST" id="form-container" class="sign-container">
+  <div class="form-group">
+    <input id="username" type="text" name="username" class="form-control intp-sign" placeholder="Your username">
+  </div>
+  <div class="form-group">
+    <input id="password" type="password" name="password" class="form-control intp-sign" placeholder="Your password"> 
+    </div>
+    {{#if message }}
     <div class="error-message">{{ message }}</div>
-  {{/if}}
-
-  <br><br>
-
-  <button>Login</button>
-
-  <p class="account-message">
-    Don't have an account yet?
-    <a href="/auth/signup">Signup</a>
-  </p>
-</form>
+    {{/if}}
+<div class="bot-sign">
+    <div>
+     <button class="sign-bot relleno btn-outline-ind bt-log">LogIn</button>
+    </div>
+    <div class="log-sign">
+      <a href="/auth/signup" class="btn-outline-ind btn-log">SignUp</a>
+    </div>
+</div>
+</div>
+  </form>
