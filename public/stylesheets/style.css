@@ -1,15 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text");
+/* COLORS */
 body {
+  background-color: #4A5562;
   padding: 0;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  max-width: 100%; }
+  max-width: 100%;
+  height: 100%; }
+
+.pos-f-t .bg-dark {
+  background-color: rgba(245, 136, 138, 0.7) !important; }
+
+.pos-f-t h1 {
+  font-family: "Libre Barcode 128 Text", cursive;
+  color: #FFFFFF;
+  font-size: 5.5rem;
+  margin-top: 2%; }
+
+.pos-f-t .fas {
+  color: #FFFFFF;
+  font-size: 4rem; }
+
+.pos-f-t a {
+  color: #FFFFFF; }
+
+.pos-f-t .navbar-toggler-icon {
+  font-size: 3em; }
+
+.bot-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .bot-home .btn {
+    background-color: rgba(245, 136, 138, 0.7);
+    border-color: #F5888A;
+    padding: 40px 90px; }
 
 img {
   max-width: 100%; }
-
-#fondo
-.nav-item a {
-  color: white; }
 
 .p-4 li {
   text-align: right;
@@ -23,9 +52,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between; }
 
-.fas {
-  color: white; }
-
 .container-home {
   display: flex;
   flex-wrap: wrap;
@@ -33,6 +59,10 @@ img {
   padding: 0 16px; }
 
 .movi {
-  width: 49%; }
+  width: 49%;
+  margin-bottom: 10px; }
+  .movi h4 {
+    padding: 10px 2px 20px 5px;
+    font-size: 2.5em; }
 
 /*# sourceMappingURL=style.css.map */
