@@ -6,7 +6,7 @@ const User = require("../models/User");
 const Movie = require("../models/Movie");
 const List = require("../models/List");
 const axios = require("axios");
-
+const commons = require("../config/commons")
 
 listRoutes.get("/", (req, res, next) => {
   res.render("list/list")
@@ -24,7 +24,7 @@ listRoutes.post("/add/:status/:id", (req, res, next) => {
     .then(movie => {
       if(movie != null){
         console.log("Ya existe")
-        saveNewList(movie, status, res.locals.user)
+        commons.saveNewList(movie, status, res.locals.user)
         .then(listSaved =>{
           console.log("List Created")
           if(status == "watched"){
@@ -55,7 +55,7 @@ listRoutes.post("/add/:status/:id", (req, res, next) => {
         newMovie.save()
         .then(movieSaved =>{
           console.log("Movie created")
-          saveNewList(movieSaved, status, res.locals.user)
+          commons.saveNewList(movieSaved, status, res.locals.user)
           .then(listSaved =>{
             console.log("List Created") 
             if(status == "watched"){
@@ -131,15 +131,5 @@ listRoutes.get("/watched-list/show/:id/delete", (req, res, next) =>{
   .then (res.redirect("/list/watched-list"))
 })
 
-/* Commons functions */
-
-let saveNewList = function(movie, status, user){
-  let newList = new List({
-    userId: user._id,
-    movieId: movie._id,
-    status
-  })
-  return newList.save()
-}
 
 module.exports = listRoutes;
