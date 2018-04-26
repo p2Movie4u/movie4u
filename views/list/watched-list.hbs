@@ -5,7 +5,13 @@
 {{#each movieWatched}}
 <div class="vista">
 <div class ="movie-img">
-<img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="poster-img">
+
+  {{#if movieId.poster}}
+    <img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="poster-img" width="200">
+      {{else}}
+    <img src="/images/default-movie.png" alt="poster-img" width="200">
+  {{/if}}   
+
 </div>
 <div class ="tittle">
 <p>{{movieId.title}}</p>
