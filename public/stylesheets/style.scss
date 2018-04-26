@@ -54,7 +54,7 @@ body {
     border-color: $colorborder;
     padding: 13px 70px;
     font-size: 2rem;
-    margin-top: 45px;
+    margin-top: 35px;
     color: $colortextnav;
   }
 }
@@ -116,12 +116,12 @@ img {
   h1 {
     color: $colortextnav;
     font-family: $textcontenct;
-    font-size: 8em;
-    margin-top: 18%;
+    font-size: 5em;
+    margin-top: 15%;
     text-align: center;
   }
   .btn {
-    font-size: 3rem;
+    font-size: 1.5rem;
     border-width: 2px;
   }
   .bot-list {
@@ -129,7 +129,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 91px;
+    margin-top: 10px;
   }
 }
 
