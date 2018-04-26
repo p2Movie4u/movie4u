@@ -1,9 +1,22 @@
-
+<div class="profile">
   <h1>Profile</h1>
-
-  <h5>Username: {{user.username}}</h5>
-  <h5>Email: {{user.email}}</h5>
+  </div>
+  <div class ="user-campos">
+  <div class ="us-img">
   <img src="{{user.photo}}" alt="{{user.username}}-profile-photo">
-
-  <a href="/list" class="btn btn-outline-danger">Lists</a>
-  <a href="/random" class="btn btn-outline-danger">Random Movie</a>
+  </div>
+  <div class="us-name">
+  <h5><span class="camp">User:</span> {{user.username}}</h5>
+  </div>
+  <div class="us-email">
+  <h5><span class="camp">Email: </span>{{user.email}}</h5>
+  </div>
+ <div class="bot-profile">
+   <div class="list-profile">
+  <a href="/list" class="btn-outline-ind btn-log">Lists</a>
+  </div>
+  <div class="random-profile">
+  <a href="/random" class="btn-outline-ind btn-log">Random Movie</a>
+  </div>
+  </div>
+  </div>
