@@ -1,7 +1,35 @@
-<h1>Random</h1>
+<div class="padre">
+<h1>Random Movie</h1>
+
 {{#with randomMovie}}
-<h5>Title: {{movieId.title}}</h5>
-<img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="{{movieId.title}}-poster-img">
-<p>{{movieId.overview}}</p>
+  <h5><i class="fas fa-film"></i> {{movieId.title}}</h5>
+  <div>
+ {{#if movieId.poster}}
+    <img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="{{movieId.title}}-img">
+      {{else}}
+    <img src="/images/default-movie.png" alt="poster-img">
+  {{/if}}   
+</div>
+
+
+<p class="overview">{{movieId.overview}}</p>
+
+<div class="list">
+{{#each movieId.genres}}
+  <p>| {{this.name}} |</p>
+{{/each}}
+</div>
+
+
+<div class="all-content">
+<p>Original Lenguage: {{movieId.language}}</p>
+<p>Popularity: {{movieId.popularity}}</p>
+<p>Runtime: {{movieId.runtime}}</p>
+</div>
+
+
 <a href="https://www.youtube.com/results?search_query={{movieId.title}}+trailer" target="_blank" class="btn btn-info">View Trailer</a>
+
+</div>
+
 {{/with}}
