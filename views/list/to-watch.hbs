@@ -1,8 +1,22 @@
+<div class="watch">
 <h1>Movies To Watch</h1>
-
+</div>
+<div class="movies-watch">
 {{#each movieWatched}}
-<p>{{title}}</p>
+<div class="vista row spaced-row">
+<div class="movie-img col-6">
+ {{#if movieId.poster}}
+            <img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="poster-img" width="200"> 
+            {{else}}
+            <img src="/images/default-movie.png" alt="poster-img" width="200"> 
+            {{/if}}
+            </div>
+            <div class="col-6 tit-bot">
+            <div class="tittle">
 <p>{{movieId.title}}</p>
-<p>{{status}}</p>
-<a href="/list/to-watch/show/{{_id}}" class="btn btn-outline-info">Show details</a>
+</div>
+<a href="/list/to-watch/show/{{_id}}" class="btn btn-home details">Show details</a>
+</div>
 {{/each}}
+</div>
+</div>

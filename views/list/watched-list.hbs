@@ -1,24 +1,25 @@
-<div class ="watch">
-<h1>Watched Movies</h1>
+<div class="watch">
+    <h1>Watched Movies</h1>
 </div>
 <div class="movies-watch">
-{{#each movieWatched}}
-<div class="vista">
-<div class ="movie-img">
+    {{#each movieWatched}}
+    <div class="vista row spaced-row">
+        <div class="movie-img col-6">
+            {{#if movieId.poster}}
+            <img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="poster-img" width="200"> 
+            {{else}}
+            <img src="/images/default-movie.png" alt="poster-img" width="200"> 
+            {{/if}}
 
-  {{#if movieId.poster}}
-    <img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="poster-img" width="200">
-      {{else}}
-    <img src="/images/default-movie.png" alt="poster-img" width="200">
-  {{/if}}   
-
-</div>
-<div class ="tittle">
-<p>{{movieId.title}}</p>
-</div>
-<div class="bot-show">
-<a href="/list/watched-list/show/{{_id}}" class="btn btn-danger">Show details</a>
-</div>
-</div>
-{{/each}}
+        </div>
+        <div class="col-6 tit-bot">
+            <div class="tittle">
+                <p>{{movieId.title}}</p>
+            </div>
+            <div class="bot-show">
+                <a href="/list/watched-list/show/{{_id}}" class="btn btn-home details">Show details</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
 </div>

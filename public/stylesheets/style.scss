@@ -389,23 +389,19 @@ a.btn-outline-corp:hover {
     margin-bottom: 5%;
   }
 }
-.movies-watch {
-  .vista{
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  width: 90%;
-  .movie-img {
-    img {
-      width: 50%;
-      height: 300px;
-      object-fit: contain;
-      margin-left: 3%;
-    }
-  }
-   .tittle {
-    width: 50%;
-  } 
+.spaced-row {
+  margin: 20px 0;
 }
+.tit-bot{
+  margin-top: 10%;
+  p{
+    color: $colortextnav;
+    font-size: 1.5em;
+  }
+  .details{
+    border: 1px solid $colorborder;
+  }
+  a{
+    color: $colortextnav;
+  }
 }
