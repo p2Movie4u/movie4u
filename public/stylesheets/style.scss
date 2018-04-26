@@ -168,13 +168,7 @@ a.btn-outline-corp:hover {
 a.btn-outline-corp:hover {
   background-color: $colorred;
 }
-.sign-container {
-  text-align: left;
-  font-family: $textcontenct;
-  color: $colortextnav;
-  font-size: 1em;
-  margin-left: 25px;
-}
+
 .form-group {
   margin-bottom: 0rem;
 }
@@ -221,6 +215,7 @@ a.btn-outline-corp:hover {
 .fa-camera {
   font-size: 3rem;
   vertical-align: middle;
+  color: white;
 }
 .titulo-index {
   font-size: 4.5rem;
