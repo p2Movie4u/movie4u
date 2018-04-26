@@ -73,8 +73,8 @@ listRoutes.post("/add/:status/:id", (req, res, next) => {
 });
 
 listRoutes.get("/watched-list", (req, res, next) => {
-
-  List.find({status:"watched"})
+  
+  List.find({userId: res.locals.user.id ,status:"watched"})
   .populate("movieId")
   .then(movieWatched =>{
     console.log(movieWatched)
@@ -84,7 +84,7 @@ listRoutes.get("/watched-list", (req, res, next) => {
 
 listRoutes.get("/to-watch", (req, res, next) => {
 
-  List.find({status:"watchlist"})
+  List.find({userId: res.locals.user.id ,status:"watchlist"})
   .populate("movieId")
   .then(movieWatched =>{
     console.log(movieWatched)
