@@ -190,10 +190,11 @@ a.btn-outline-corp:hover {
 .intp-sign {
   width: 90%;
   font-size: 1.5em;
-  border: 3px solid $colorborder;
+  border: 1px solid $colorborder;
   margin: 35px auto;
   color: white;
   background-color: $micolor1;
+
 }
 .intp-sign::placeholder {
   font-family: "Roboto", sans-serif;
@@ -230,7 +231,7 @@ a.btn-outline-corp:hover {
 .btn-log {
   font-size: 1.5rem;
   border-width: 2px;
-  padding: 16px 57px;
+  padding: 15px 35px;
   border-radius: 20px;
   border-style: none;
   color: $colortextnav;
