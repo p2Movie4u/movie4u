@@ -1,8 +1,16 @@
+<div class ="watch">
 <h1>Watched Movies</h1>
-
+</div>
+<div class="movies-watch">
 {{#each movieWatched}}
-<p>{{title}}</p>
+<div class ="movie-img">
+<img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="poster-img">
+</div>
+<div class ="tittle">
 <p>{{movieId.title}}</p>
-<p>{{status}}</p>
+</div>
+<div class="bot-show">
 <a href="/list/watched-list/show/{{_id}}" class="btn btn-danger">Show details</a>
+</div>
 {{/each}}
+</div>
