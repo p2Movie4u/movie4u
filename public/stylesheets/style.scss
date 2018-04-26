@@ -190,7 +190,7 @@ margin-left: 25px;
   font-size: 1.5em;
   border: 3px solid $colorborder;
   margin: 35px auto;
-
+  color: white;
   background-color: $micolor1; 
 }
 .intp-sign::placeholder{ 
@@ -283,11 +283,4 @@ margin-left: 25px;
 .relleno{
   width: 280px;
   padding: 19px;
-}
-.intp-sign:hover {
-  background-color: $micolor1;
-  color: $colortextnav;
-}
-.input-text {
-  color: $colortextnav;
 }

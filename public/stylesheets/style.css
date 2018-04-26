@@ -155,6 +155,7 @@ a.btn-outline-corp:hover {
   font-size: 1.5em;
   border: 3px solid #f5888a;
   margin: 35px auto;
+  color: white;
   background-color: #4a5562; }
 
 .intp-sign::placeholder {
@@ -239,12 +240,5 @@ a.btn-outline-corp:hover {
 .relleno {
   width: 280px;
   padding: 19px; }
-
-.intp-sign:hover {
-  background-color: #4a5562;
-  color: #ffffff; }
-
-.input-text {
-  color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
