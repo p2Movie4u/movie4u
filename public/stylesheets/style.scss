@@ -54,7 +54,7 @@ body {
     border-color: $colorborder;
     padding: 13px 70px;
     font-size: 2rem;
-    margin-top: 45px;
+    margin-top: 35px;
     color: $colortextnav;
   }
 }
@@ -116,12 +116,12 @@ img {
   h1 {
     color: $colortextnav;
     font-family: $textcontenct;
-    font-size: 8em;
-    margin-top: 18%;
+    font-size: 5em;
+    margin-top: 15%;
     text-align: center;
   }
   .btn {
-    font-size: 3rem;
+    font-size: 1.5rem;
     border-width: 2px;
   }
   .bot-list {
@@ -129,7 +129,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 91px;
+    margin-top: 10px;
   }
 }
 
@@ -224,7 +224,7 @@ a.btn-outline-corp:hover {
   margin-top: 30%;
 }
 .btn-log {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-width: 2px;
   padding: 15px 35px;
   border-radius: 20px;
@@ -322,12 +322,11 @@ a.btn-outline-corp:hover {
 }
 .profile {
   h1 {
-    font-size: 7em;
+    font-size: 4em;
     font-family: "Slabo 27px", serif;
     color: #ffffff;
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    margin-top: 6%;
   }
 }
 .user-campos {
@@ -337,26 +336,26 @@ a.btn-outline-corp:hover {
   justify-content: center;
   .us-name,
   .us-email {
-    margin-left: 20%;
-    margin-top: 5%;
+    margin-left: 10%;
+    margin-top: 3%;
     h5 {
       text-align: left;
       font-family: $textcontenct;
       color: $colortextnav;
-      font-size: 5em;
+      font-size: 1.9em;
     }
     .camp {
       color: $colorred;
-      font-size: 3rem;
-      margin-right: 15px;
+      font-size: 1.2rem;
+      margin-right: 2px;
     }
   }
   .us-img {
     img {
-      width: 60%;
-      height: 600px;
-      object-fit: contain;
-      margin-left: 3%;
+      width: 50%;
+    height: 235px;
+    object-fit: contain;
+    margin-left: 6%;
     }
   }
   .bot-profile {
@@ -366,8 +365,16 @@ a.btn-outline-corp:hover {
     align-items: center;
     margin-top: 7%;
     .list-profile {
-      margin-top: 3%;
-      margin-bottom: 8%;
+      margin-top: 1%;
+      margin-bottom: 10%;
+    }
+    .random{
+      padding: 16px 32px;
+      border-radius: 10px;
+    }
+    .list-bt{
+      padding: 13px 25px;
+    border-radius: 10px;
     }
   }
 }
