@@ -1,6 +1,12 @@
 {{#with data}}
 <h3>{{movieId.title}}</h3>
-<img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="" width=200>
+
+  {{#if movieId.poster}}
+    <img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="poster-img" width="200">
+      {{else}}
+    <img src="/images/default-movie.png" alt="poster-img" width="200">
+  {{/if}}  
+
 <p>{{movieId.overview}}</p>
 <a href="/list/watched-list/show/{{id}}/delete" class="btn btn-danger">Delete</a>
 {{/with}}
