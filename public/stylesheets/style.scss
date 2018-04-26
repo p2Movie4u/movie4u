@@ -28,12 +28,12 @@ body {
   h1 {
     font-family: $textapp;
     color: $colortextnav;
-    font-size: 3.5rem;
-    margin-top: 2%;
+    font-size: 2.3rem;
+    margin-bottom: 0;
   }
   .fa-home {
     color: $colortextnav;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   a {
     color: $colortextnav;
@@ -41,7 +41,7 @@ body {
     font-size: 1.5em;
   }
   .navbar-toggler-icon {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 .bot-home {
@@ -158,19 +158,12 @@ a.btn-outline-corp:hover {
   font-size: 2.5rem;
 }
 
-<<<<<<< HEAD
-#lupa{
-  font-size: 45px;
-}
-
-=======
 .lupa {
   font-size: 45px;
 }
 .lupa-nav {
   font-size: 12px;
 }
->>>>>>> a585970512969f1442f7e79fec38f5eaee996a40
 
 a.btn-outline-corp:hover {
   background-color: $colorred;
@@ -219,10 +212,10 @@ a.btn-outline-corp:hover {
   font-size: 1.5rem;
   border-width: 2px;
   padding: 20px;
-  border-radius: 25px;
+  border-radius: 20px;
   border-style: none;
   color: $colortextnav;
-  margin-bottom: 10%;
+  margin-bottom: 18%;
 }
 .fa-camera {
   font-size: 3rem;
@@ -237,7 +230,7 @@ a.btn-outline-corp:hover {
 .btn-log {
   font-size: 1.5rem;
   border-width: 2px;
-  padding: 15px 76px;
+  padding: 17px 66px;
   border-radius: 20px;
   border-style: none;
   color: $colortextnav;
@@ -247,7 +240,7 @@ a.btn-outline-corp:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  margin-top: 17px;
 }
 .b-sign {
   margin-top: 30px;
@@ -264,37 +257,25 @@ a.btn-outline-corp:hover {
   color: white;
   text-align: center;
 }
-<<<<<<< HEAD
-
-.bot-login{
-=======
-.pepe {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
 .bot-login {
->>>>>>> a585970512969f1442f7e79fec38f5eaee996a40
   display: flex;
   flex-direction: column;
 }
 .log h2 {
-  font-size: 10em;
+  font-size: 5em;
   font-family: "Slabo 27px", serif;
   color: #ffffff;
   text-align: center;
-  margin-top: 25%;
-  margin-bottom: 5%;
+  margin-top: 13%;
+  margin-bottom: 6%;
 }
 .log-sign {
   margin-top: 4%;
 }
 .relleno {
-  width: 280px;
-  padding: 19px;
+  width: 208px;
+  padding: 16px;
 }
-<<<<<<< HEAD
 
 .padre{
   font-family:'Roboto', sans-serif;
@@ -343,7 +324,6 @@ a.btn-outline-corp:hover {
 .second-b{
   margin-left: 6%;
 }
-=======
 .profile {
   h1 {
     font-size: 7em;
@@ -362,7 +342,7 @@ a.btn-outline-corp:hover {
   .us-name,
   .us-email {
     margin-left: 20%;
-    margin-top:5%;
+    margin-top: 5%;
     h5 {
       text-align: left;
       font-family: $textcontenct;
@@ -373,32 +353,30 @@ a.btn-outline-corp:hover {
       color: $colorred;
       font-size: 3rem;
       margin-right: 15px;
-
     }
   }
   .us-img {
-    img{
-    width: 60%;
-    height: 600px;
-    object-fit: contain;
-    margin-left: 3%;
-    
+    img {
+      width: 60%;
+      height: 600px;
+      object-fit: contain;
+      margin-left: 3%;
     }
   }
-  .bot-profile{
+  .bot-profile {
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 7%;
-  .list-profile{
-    margin-top: 3%;
-    margin-bottom: 8%;
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    .list-profile {
+      margin-top: 3%;
+      margin-bottom: 8%;
+    }
   }
 }
 
-.watch{
+.watch {
   h1 {
     font-size: 7em;
     font-family: "Slabo 27px", serif;
@@ -408,21 +386,20 @@ a.btn-outline-corp:hover {
     margin-bottom: 5%;
   }
 }
-.movies-watch{
+.movies-watch {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  .movie-img{
-    img{
+  .movie-img {
+    img {
       width: 30%;
-    height: 300px;
-    object-fit: contain;
-    margin-left: 3%;
+      height: 300px;
+      object-fit: contain;
+      margin-left: 3%;
     }
   }
-   .tittle{
+  .tittle {
     display: left;
-  } 
+  }
 }
->>>>>>> a585970512969f1442f7e79fec38f5eaee996a40

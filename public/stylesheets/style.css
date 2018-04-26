@@ -18,17 +18,17 @@ body {
   .pos-f-t h1 {
     font-family: "Libre Barcode 128 Text", cursive;
     color: #ffffff;
-    font-size: 3.5rem;
-    margin-top: 2%; }
+    font-size: 2.3rem;
+    margin-bottom: 0; }
   .pos-f-t .fa-home {
     color: #ffffff;
-    font-size: 2.5rem; }
+    font-size: 2rem; }
   .pos-f-t a {
     color: #ffffff;
     font-family: "Slabo 27px", serif;
     font-size: 1.5em; }
   .pos-f-t .navbar-toggler-icon {
-    font-size: 1.5em; }
+    font-size: 1em; }
 
 .bot-home {
   display: flex;
@@ -128,8 +128,11 @@ a.btn-outline-corp:hover {
 #input-title {
   font-size: 2.5rem; }
 
-#lupa {
+.lupa {
   font-size: 45px; }
+
+.lupa-nav {
+  font-size: 12px; }
 
 a.btn-outline-corp:hover {
   background-color: rgba(245, 136, 138, 0.7); }
@@ -175,10 +178,10 @@ a.btn-outline-corp:hover {
   font-size: 1.5rem;
   border-width: 2px;
   padding: 20px;
-  border-radius: 25px;
+  border-radius: 20px;
   border-style: none;
   color: #ffffff;
-  margin-bottom: 10%; }
+  margin-bottom: 18%; }
 
 .fa-camera {
   font-size: 3rem;
@@ -193,7 +196,7 @@ a.btn-outline-corp:hover {
 .btn-log {
   font-size: 1.5rem;
   border-width: 2px;
-  padding: 15px 76px;
+  padding: 17px 66px;
   border-radius: 20px;
   border-style: none;
   color: #ffffff; }
@@ -202,7 +205,8 @@ a.btn-outline-corp:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 17px; }
 
 .b-sign {
   margin-top: 30px; }
@@ -221,19 +225,19 @@ a.btn-outline-corp:hover {
   flex-direction: column; }
 
 .log h2 {
-  font-size: 10em;
+  font-size: 5em;
   font-family: "Slabo 27px", serif;
   color: #ffffff;
   text-align: center;
-  margin-top: 25%;
-  margin-bottom: 5%; }
+  margin-top: 13%;
+  margin-bottom: 6%; }
 
 .log-sign {
   margin-top: 4%; }
 
 .relleno {
-  width: 280px;
-  padding: 19px; }
+  width: 208px;
+  padding: 16px; }
 
 .padre {
   font-family: 'Roboto', sans-serif;
@@ -271,6 +275,7 @@ a.btn-outline-corp:hover {
 
 .second-b {
   margin-left: 6%; }
+
 .profile h1 {
   font-size: 7em;
   font-family: "Slabo 27px", serif;
@@ -326,15 +331,13 @@ a.btn-outline-corp:hover {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center; 
-}
-.movies-watch .movie-img img {
+  justify-content: center; }
+  .movies-watch .movie-img img {
     width: 30%;
     height: 300px;
     object-fit: contain;
-    margin-left: 3%; 
-}
-.movies-watch .tittle {
-    display: left; 
-  }
+    margin-left: 3%; }
+  .movies-watch .tittle {
+    display: left; }
 
+/*# sourceMappingURL=style.css.map */
