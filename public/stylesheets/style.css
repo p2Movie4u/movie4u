@@ -326,18 +326,17 @@ a.btn-outline-corp:hover {
   margin-top: 6%;
   margin-bottom: 5%; }
 
-.movies-watch .vista {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  width: 90%; }
-  .movies-watch .vista .movie-img img {
-    width: 50%;
-    height: 150px;
-    object-fit: contain;
-    margin-left: 3%; }
-  .movies-watch .vista .tittle {
-    width: 50%; }
+.spaced-row {
+  margin: 20px 0; }
+
+.tit-bot {
+  margin-top: 10%; }
+  .tit-bot p {
+    color: #ffffff;
+    font-size: 1.5em; }
+  .tit-bot .details {
+    border: 1px solid #f5888a; }
+  .tit-bot a {
+    color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
