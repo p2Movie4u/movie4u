@@ -284,9 +284,10 @@ margin-left: 25px;
   width: 280px;
   padding: 19px;
 }
-.as{
-  color: white;
+.intp-sign:hover {
+  background-color: $micolor1;
+  color: $colortextnav;
 }
-.a{
-  color: inherit;
+.input-text {
+  color: $colortextnav;
 }

@@ -240,10 +240,11 @@ a.btn-outline-corp:hover {
   width: 280px;
   padding: 19px; }
 
-.as {
-  color: white; }
+.intp-sign:hover {
+  background-color: #4a5562;
+  color: #ffffff; }
 
-.a {
-  color: inherit; }
+.input-text {
+  color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
