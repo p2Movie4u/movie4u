@@ -1,7 +1,7 @@
 /*GOOGLE FONTS*/
 @import url("https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text");
 @import url("https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Slabo+27px");
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300");
 /* COLORS */
 
 $micolor1: #4a5562;
@@ -28,20 +28,20 @@ body {
   h1 {
     font-family: $textapp;
     color: $colortextnav;
-    font-size: 5.5rem;
-    margin-top: 2%;
+    font-size: 2.3rem;
+    margin-bottom: 0;
   }
   .fa-home {
     color: $colortextnav;
-    font-size: 4rem;
+    font-size: 2rem;
   }
   a {
     color: $colortextnav;
     font-family: $textcontenct;
-    font-size: 3em;
+    font-size: 1.5em;
   }
   .navbar-toggler-icon {
-    font-size: 3em;
+    font-size: 1em;
   }
 }
 .bot-home {
@@ -49,7 +49,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 
   .btn {
     border-color: $colorborder;
@@ -73,6 +72,7 @@ img {
 }
 .nav-link {
   font-size: 1.5em;
+  padding: 0.3rem 0.5rem;
 }
 #container-movies {
   display: flex;
@@ -95,7 +95,7 @@ img {
 }
 .premier-list {
   h1 {
-    font-size: 7em;
+    font-size: 4em;
   }
   color: $colortextnav;
   font-family: $textcontenct;
@@ -107,10 +107,10 @@ img {
   width: 49%;
   margin-bottom: 7px;
 }
-  img {
-    width: 100%;
-    height: 700px;
-  }
+img {
+  width: 100%;
+  height: 250px;
+}
 
 .list {
   h1 {
@@ -133,11 +133,11 @@ img {
   }
 }
 
-a.btn-outline-corp:hover{
-    background-color: $colorred ;
+a.btn-outline-corp:hover {
+  background-color: $colorred;
 }
 
-.movie-item{
+.movie-item {
   width: 50%;
   padding: 0 2%;
   display: flex;
@@ -147,21 +147,23 @@ a.btn-outline-corp:hover{
   margin-bottom: 7px;
 }
 
-.search-bar{
-    height: 100px;
-    margin-top: 2%;
-    width: 95%;
-    margin: 20px auto;
-  }
-
-#input-title{
-    font-size: 2.5rem;
+.search-bar {
+  height: 100px;
+  margin-top: 2%;
+  width: 95%;
+  margin: 20px auto;
 }
 
-#lupa{
+#input-title {
+  font-size: 2.5rem;
+}
+
+.lupa {
   font-size: 45px;
 }
-
+.lupa-nav {
+  font-size: 12px;
+}
 
 a.btn-outline-corp:hover {
   background-color: $colorred;
@@ -170,66 +172,66 @@ a.btn-outline-corp:hover {
   text-align: left;
   font-family: $textcontenct;
   color: $colortextnav;
-  font-size: 3.35em;
-margin-left: 25px;
+  font-size: 1em;
+  margin-left: 25px;
+}
+.form-group {
+  margin-bottom: 0rem;
 }
 .sign {
-
   h2 {
-    font-size: 10em;
+    font-size: 3em;
     font-family: $textcontenct;
-  color: $colortextnav;
-  text-align: center;
-  margin: 11% auto 18% auto;
+    color: $colortextnav;
+    text-align: center;
+    margin: 6% auto 6% auto;
   }
 }
-.intp-sign{
+.intp-sign {
   width: 90%;
   font-size: 1.5em;
   border: 3px solid $colorborder;
   margin: 35px auto;
   color: white;
-  background-color: $micolor1; 
+  background-color: $micolor1;
 }
-.intp-sign::placeholder{ 
-  font-family:'Roboto', sans-serif;
-  color: #C8CACC;
+.intp-sign::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #c8cacc;
   font-weight: 100;
-  
 }
-.photo{
-  margin-top: 83px;
+.photo {
+  margin-top: 30px;
   text-align: center;
-  .btn{
-    font-family: 'Roboto', sans-serif;
+  .btn {
+    font-family: "Roboto", sans-serif;
     font-size: 0.7em;
   }
 }
-.sign-bot{
-  font-size: 3.7rem;
+.sign-bot {
+  font-size: 1.5rem;
   border-width: 2px;
-  padding: 28px;
-  border-radius: 25px;
+  padding: 20px;
+  border-radius: 20px;
   border-style: none;
   color: $colortextnav;
-  margin-bottom: 9%;
-
+  margin-bottom: 18%;
 }
-.fa-camera{
-  font-size: 5rem;
+.fa-camera {
+  font-size: 3rem;
   vertical-align: middle;
 }
-.titulo-index{
+.titulo-index {
   font-size: 10rem;
   color: white;
   text-align: center;
   margin-top: 35%;
 }
-.btn-log{
-  font-size: 3.7rem;
+.btn-log {
+  font-size: 1.5rem;
   border-width: 2px;
-  padding: 15px 91px;
-  border-radius: 25px;
+  padding: 17px 66px;
+  border-radius: 20px;
   border-style: none;
   color: $colortextnav;
 }
@@ -238,44 +240,41 @@ margin-left: 25px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 7%;
+  margin-top: 17px;
 }
-.b-sign{
+.b-sign {
   margin-top: 30px;
-  p{
+  p {
     font-size: 3rem;
   }
-.bt-log{
-  padding: 25px 75px;
-  
-}
+  .bt-log {
+    padding: 25px 75px;
+  }
 }
 
-.titulo-login{
+.titulo-login {
   font-size: 10rem;
   color: white;
   text-align: center;
-  
 }
-
-.bot-login{
+.bot-login {
   display: flex;
   flex-direction: column;
 }
 .log h2 {
-  font-size: 10em;
+  font-size: 5em;
   font-family: "Slabo 27px", serif;
   color: #ffffff;
   text-align: center;
-  margin-top: 25%;
-    margin-bottom: 5%;
+  margin-top: 13%;
+  margin-bottom: 6%;
 }
-.log-sign{
+.log-sign {
   margin-top: 4%;
 }
-.relleno{
-  width: 280px;
-  padding: 19px;
+.relleno {
+  width: 208px;
+  padding: 16px;
 }
 
 .padre{
@@ -324,4 +323,83 @@ margin-left: 25px;
 
 .second-b{
   margin-left: 6%;
+}
+.profile {
+  h1 {
+    font-size: 7em;
+    font-family: "Slabo 27px", serif;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+}
+.user-campos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  .us-name,
+  .us-email {
+    margin-left: 20%;
+    margin-top: 5%;
+    h5 {
+      text-align: left;
+      font-family: $textcontenct;
+      color: $colortextnav;
+      font-size: 5em;
+    }
+    .camp {
+      color: $colorred;
+      font-size: 3rem;
+      margin-right: 15px;
+    }
+  }
+  .us-img {
+    img {
+      width: 60%;
+      height: 600px;
+      object-fit: contain;
+      margin-left: 3%;
+    }
+  }
+  .bot-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    .list-profile {
+      margin-top: 3%;
+      margin-bottom: 8%;
+    }
+  }
+}
+
+.watch {
+  h1 {
+    font-size: 7em;
+    font-family: "Slabo 27px", serif;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+}
+.movies-watch {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  .movie-img {
+    img {
+      width: 30%;
+      height: 300px;
+      object-fit: contain;
+      margin-left: 3%;
+    }
+  }
+  .tittle {
+    display: left;
+  }
 }
