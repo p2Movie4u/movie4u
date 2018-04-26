@@ -11,7 +11,7 @@ const commons = require("../config/commons");
 
 randomRoutes.get("/", (req, res, next) =>{
 
-  List.find({status: "watchlist"})
+  List.find({userId: res.locals.user.id ,status: "watchlist"})
   .populate("movieId")
   .then(data => {
     let randomIndex = commons.random(data.length)
