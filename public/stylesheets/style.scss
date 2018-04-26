@@ -158,12 +158,10 @@ a.btn-outline-corp:hover{
     font-size: 2.5rem;
 }
 
-.lupa{
+#lupa{
   font-size: 45px;
 }
-.lupa-nav{
-  font-size: 12px;
-}
+
 
 a.btn-outline-corp:hover {
   background-color: $colorred;
@@ -259,12 +257,7 @@ margin-left: 25px;
   text-align: center;
   
 }
-.pepe{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
+
 .bot-login{
   display: flex;
   flex-direction: column;
@@ -283,4 +276,45 @@ margin-left: 25px;
 .relleno{
   width: 280px;
   padding: 19px;
+}
+
+.padre{
+  font-family:'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+  h1{
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 8%;
+  }
+  img{
+    width: 50%;
+    height: 700px;
+    margin: 4% 0;
+  }
+  .overview{
+    font-size: 2.5rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .list{
+    margin-top: 2%;
+    display: inline-flex;
+    p{
+      font-size: 1.7rem;
+    }
+  }
+  .all-content{
+    p{
+      font-size: 2.1rem;
+    }
+  }
+}
+
+.botones-list{
+  display: flex;
+  /* flex-direction: row; */
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 4%;
 }

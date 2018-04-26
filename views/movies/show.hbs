@@ -1,18 +1,74 @@
+<div class="padre">
+
 {{#with data}}
-<h3>{{original_title}}</h3>
+  <h1><i class="fas fa-film"></i> {{original_title}}</h1>
+  <div>
  {{#if poster_path}}
     <img src="https://image.tmdb.org/t/p/w500{{poster_path}}" alt="poster-img" width="200">
       {{else}}
     <img src="/images/default-movie.png" alt="poster-img" width="200">
   {{/if}}   
+</div>
 
-<p>{{overview}}</p>
+
+<p class="overview">{{overview}}</p>
+
+<div class="list">
+{{#each genres}}
+  <p>| {{this.name}} |</p>
+{{/each}}
+</div>
+
+
+<div class="all-content">
+<p>Original Lenguage: {{original_language}}</p>
+<p>Popularity: {{popularity}}</p>
+<p>Runtime: {{runtime}}</p>
+<p>Rating Average: {{vote_average}}</p>
+<p>Votes: {{vote_count}}</p>
+</div>
+
+</div>
+
+<div class="botones-list">
 <form action="/list/add/watched/{{id}}" method="POST">
-  <button type="submit" class="btn btn-info">Add to Watched Movies</button>
+  <div>
+  <button type="submit" class="btn btn-info btn-lg">Add to Watched Movies</button>
+  </div>
 </form>
 <form action="/list/add/watchlist/{{id}}" method="POST">
-  <button type="submit" class="btn btn-info">Add to Watchlist</button>
+<div>
+  <button type="submit" class="btn btn-info btn-lg">Add to Watchlist</button>
+</div>
 </form>
+</div>
 {{/with}}
 
 
+{{!-- 
+
+  original_language: 'en',
+  original_title: 'A Quiet Place',
+  overview: 'A family is forced to live in silence while hiding from creatures that hunt by sound.',
+  popularity: 109.996309,
+  poster_path: '/nAU74GmpUk7t5iklEp3bufwDq4n.jpg',
+  production_companies:
+   [ { id: 29312,
+       logo_path: null,
+       name: 'Sunday Night',
+       origin_country: 'US' },
+     { id: 2481,
+       logo_path: '/vOQg26GjR0LnkN1Ph9uyog1UuOE.png',
+       name: 'Platinum Dunes',
+       origin_country: 'US' } ],
+  production_countries: [ { iso_3166_1: 'US', name: 'United States of America' } ],
+  release_date: '2018-04-05',
+  revenue: 207158711,
+  runtime: 95,
+  spoken_languages: [ { iso_639_1: 'en', name: 'English' } ],
+  status: 'Released',
+  tagline: 'If they hear you, they hunt you.',
+  title: 'A Quiet Place',
+  video: false,
+  vote_average: 7.4,
+  vote_count: 725 } --}}
