@@ -2,9 +2,13 @@
 <h1>Movies To Watch</h1>
 </div>
 <div class="movies-watch">
-{{#each movieWatched}}
-<div class="vista row spaced-row">
-<div class="movie-img col-6">
+{{#if movieWatched}}
+
+  {{#each movieWatched}}
+  <div class="vista row spaced-row">
+  <div class="movie-img col-6">
+  
+
  {{#if movieId.poster}}
             <img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="poster-img" width="200"> 
             {{else}}
@@ -18,5 +22,12 @@
 <a href="/list/to-watch/show/{{_id}}" class="btn btn-home details">Show details</a>
 </div>
 {{/each}}
+{{else}}
+  <div class="empty-list">
+  <h3>Try to add some movies</h3>
+  <a href="/home" class="btn btn-outline-info">Go to Premieres</a>
+  <a href="/movies" class="btn btn-outline-info">Go to Movies</a>
+  </div>
+{{/if}}
 </div>
 </div>
