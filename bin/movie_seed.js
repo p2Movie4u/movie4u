@@ -1,14 +1,14 @@
+require("dotenv").config();
+
 const mongoose = require("mongoose");
 const Movie = require("../models/Movie");
 const movie_data = require("./movie_data");
 
-const dbURL = "mongodb://localhost/movie4u";
+mongoose.connect(process.env.dbURL).then(() => {
+  console.log(`Conected to db ${process.env.dbURL}`);
 
-mongoose.connect(dbURL).then(() => {
-  console.log(`Conected to db ${dbURL}`);
-
-  mongoose.connection.db.dropCollection("movies").then(() => {
-    console.log("Collection deleted");
+  // mongoose.connection.db.dropCollection("movies").then(() => {
+  //   console.log("Collection deleted");
 
     movie_data.forEach(e => {
       let movie = new Movie({
@@ -31,4 +31,4 @@ mongoose.connect(dbURL).then(() => {
         });
     });
   });
-});
+// });

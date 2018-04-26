@@ -17,7 +17,7 @@ const ensureLoggedIn = require("./middlewares/ensureLoggedIn")
 
 mongoose.Promise = Promise;
 mongoose
-  .connect('mongodb://localhost/movie4u', {useMongoClient: true})
+  .connect(process.env.dbURL, {useMongoClient: true})
   .then(() => {
     console.log('Connected to Mongo!')
   }).catch(err => {

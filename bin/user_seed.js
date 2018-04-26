@@ -1,16 +1,16 @@
 const mongoose = require("mongoose");
 const User = require("../models/User");
-const user_data = require("./user_data");
+require("dotenv").config();
 
-const dbURL = "mongodb://localhost/movie4u";
+const user_data = require("./user_data");
 
 const bcrypt = require("bcrypt");
 const bcryptSalt = 10;
 
 const salt = bcrypt.genSaltSync(bcryptSalt);
 
-mongoose.connect(dbURL).then(() => {
-  console.log(`Conected to db ${dbURL}`);
+mongoose.connect(process.env.dbURL).then(() => {
+  console.log(`Conected to db ${process.env.dbURL}`);
 
   mongoose.connection.db.dropCollection("users").then(() => {
     console.log("Collection deleted");
