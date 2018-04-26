@@ -381,28 +381,31 @@ a.btn-outline-corp:hover {
 
 .watch {
   h1 {
-    font-size: 7em;
+    font-size: 3em;
     font-family: "Slabo 27px", serif;
     color: #ffffff;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 6%;
     margin-bottom: 5%;
   }
 }
 .movies-watch {
+  .vista{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-content: center;
   justify-content: center;
+  width: 90%;
   .movie-img {
     img {
-      width: 30%;
+      width: 50%;
       height: 300px;
       object-fit: contain;
       margin-left: 3%;
     }
   }
-  .tittle {
-    display: left;
-  }
+   .tittle {
+    width: 50%;
+  } 
+}
 }
