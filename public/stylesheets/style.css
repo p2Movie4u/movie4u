@@ -334,7 +334,7 @@ a.btn-outline-corp:hover {
   width: 90%; }
   .movies-watch .vista .movie-img img {
     width: 50%;
-    height: 300px;
+    height: 150px;
     object-fit: contain;
     margin-left: 3%; }
   .movies-watch .vista .tittle {
