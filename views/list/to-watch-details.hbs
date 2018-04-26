@@ -1,8 +1,33 @@
-{{#with data}}
+<div class="padre">
 
-<h3>{{movieId.title}}</h3>
-<img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="" width=200>
-<p>{{movieId.overview}}</p>
+{{#with data}}
+  <h1><i class="fas fa-film"></i> {{movieId.title}}</h1>
+  <div>
+ {{#if movieId.poster}}
+    <img src="https://image.tmdb.org/t/p/w500{{movieId.poster}}" alt="{{movieId.title}}-img">
+      {{else}}
+    <img src="/images/default-movie.png" alt="poster-img">
+  {{/if}}   
+</div>
+
+
+<p class="overview">{{movieId.overview}}</p>
+
+<div class="list">
+{{#each movieId.genres}}
+  <p>| {{this.name}} |</p>
+{{/each}}
+</div>
+
+
+<div class="all-content">
+<p>Original Lenguage: {{movieId.language}}</p>
+<p>Popularity: {{movieId.popularity}}</p>
+<p>Runtime: {{movieId.runtime}}</p>
+</div>
 <a href="/list/to-watch/show/{{_id}}/edit" class="btn btn-outline-success">Whatched!</a>
-<a href="/list/to-watch/show/{{_id}}/delete" class="btn btn-outline-danger">Delete</a>
+<a href="/list/watched-list/show/{{id}}/delete" class="btn btn-danger">Delete</a>
+
+</div>
+
 {{/with}}
