@@ -238,24 +238,24 @@ a.btn-outline-corp:hover {
   color: white;
   text-align: center; }
   .padre h1 {
-    font-size: 5rem;
+    font-size: 2.3rem;
     text-align: center;
-    margin-top: 8%; }
+    margin-top: 6%; }
   .padre img {
-    width: 50%;
-    height: 700px;
+    width: 80%;
+    height: 400px;
     margin: 4% 0; }
   .padre .overview {
-    font-size: 2.5rem;
-    width: 70%;
+    font-size: 1.5rem;
+    width: 90%;
     margin: 0 auto; }
   .padre .list {
     margin-top: 2%;
     display: inline-flex; }
     .padre .list p {
-      font-size: 1.7rem; }
+      font-size: 1rem; }
   .padre .all-content p {
-    font-size: 2.1rem; }
+    font-size: 1.2rem; }
 
 .botones-list {
   display: flex;
@@ -265,7 +265,7 @@ a.btn-outline-corp:hover {
   margin-top: 4%; }
 
 .btn-lg {
-  font-size: 3.5rem; }
+  font-size: 1rem; }
 
 .second-b {
   margin-left: 6%; }
