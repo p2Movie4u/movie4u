@@ -182,10 +182,11 @@ a.btn-outline-corp:hover {
   color: white; }
 
 .titulo-index {
-  font-size: 4.5rem;
+  font-size: 6rem;
   color: white;
   text-align: center;
-  margin-top: 30%; }
+  margin-top: 30%;
+  font-family: "Libre Barcode 128 Text", cursive; }
 
 .btn-log {
   font-size: 1.2rem;
